@@ -119,19 +119,20 @@
 
   <section>
     <h2>Data We Collect</h2>
-    <p>Recall AI stores the following data <strong>on your device only</strong>:</p>
+    <p>Recall AI stores the following data <strong>on your device</strong>:</p>
     <ul>
       <li>Audio recordings (.caf files)</li>
       <li>Text transcripts generated from those recordings</li>
       <li>Consent logs documenting when permission was confirmed</li>
       <li>PDF session reports</li>
     </ul>
-    <p>No personal data, audio, or transcripts are transmitted to our servers or any third party.</p>
+    <p>Recall AI does not operate its own servers and does not transmit your data to Recall AI or Black Mirror Lab. However, transcription is powered by Apple's Speech Recognition service — see the Third-Party Services section below for full details.</p>
   </section>
 
   <section>
     <h2>How Your Data Is Used</h2>
-    <p>Audio recordings are used solely to generate PDF transcripts on your device. Speech recognition is performed locally using Apple's on-device Speech Recognition framework. Your voice never leaves your iPhone.</p>
+    <p>Audio recordings are used solely to generate text transcripts and PDF reports. Transcription is performed by <strong>Apple's Speech Recognition framework (SFSpeechRecognizer)</strong>, which is built into iOS. Apple processes your audio on-device when on-device models are available for your selected language. When on-device processing is not available — for example, for certain languages or on older devices — Apple's framework may transmit audio to Apple's servers for transcription. This processing by Apple is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+    <p>We do not use your audio or transcripts for any purpose other than generating your session transcript.</p>
   </section>
 
   <section>
@@ -143,10 +144,12 @@
     <h2>Third-Party Services</h2>
     <p>Recall AI uses the following third-party services:</p>
     <ul>
-      <li><strong>Apple App Store</strong> — subscription billing and payment processing, subject to <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</li>
-      <li><strong>Apple Speech Recognition</strong> — on-device transcription, subject to Apple's data practices. No audio is sent to Apple servers when using on-device recognition.</li>
+      <li>
+        <strong>Apple Speech Recognition (Apple Inc.)</strong> — Recall AI uses iOS's built-in <code>SFSpeechRecognizer</code> API to transcribe audio. <em>What data is sent:</em> voice audio from your recording session. <em>Who receives it:</em> Apple Inc. <em>When:</em> when on-device speech models are unavailable, iOS may route audio to Apple's servers. You can enable <strong>On-Device Only</strong> mode in Recall AI Settings to prevent any server-side processing (transcription may be unavailable for some languages in this mode). Apple's handling of this data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.
+      </li>
+      <li><strong>Apple App Store</strong> — subscription billing and payment processing, governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</li>
     </ul>
-    <p>We do not use any analytics, advertising, or crash-reporting services that collect personal data.</p>
+    <p>We do not use any analytics, advertising, or crash-reporting services that collect personal data. Your audio is never shared with any party other than Apple's Speech Recognition service as described above.</p>
   </section>
 
   <section>
@@ -173,7 +176,7 @@
   <section>
     <h2>Contact</h2>
     <p>Questions or concerns about this Privacy Policy? Reach us at:<br>
-    <a href="mailto:blackmirrorlab@gmail.com">blackmirrorlab@gmail.com</a></p>
+    <a href="mailto:castaldostudio@mac.com">castaldostudio@mac.com</a></p>
   </section>
 
 </main>
